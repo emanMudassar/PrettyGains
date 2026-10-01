@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>PrettyGains</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+* {
+  box-sizing: border-box;
+ }
+body {
+ margin: 0;
+overflow-x: hidden;
+ }
+menu-toggle {
+ display: none;
+ }
+ .toggle-button {
+ display: none;
+ }
+ .nav-links {
+ text-align: right;
+ margin-top: -25px;
+ }
+ .nav-links a {
+   text-decoration: none;
+   font-family: cursive;
+  color: rgb(75,45,95);
+  margin: 10px;
+        }
+        img {
+            max-width: 100%;
+        }
+ @media screen and (max-width:600px) {
+ nav section {
+ padding: 20px !important;
+            }
+ nav section div:first-child {
+ font-size: 25px !important;
+            }
+ .toggle-button {
+ display: block;
+ text-align: right;
+ font-size: 30px;
+color: rgb(112,60,139);
+ cursor: pointer;
+ margin-top: -30px;
+ }
+
+.nav-links {
+ display: none;
+margin-top: 20px;
+text-align: center;
+ white-space: nowrap;
+ overflow-x: auto;
+ padding-bottom: 5px;
+}
+#menu-toggle:checked ~ .nav-links {
+ display: block;
+            }
+.nav-links a {
+  display: inline-block;
+  margin: 5px 7px;
+  font-size: 14px;
+ }
+  #home {
+  padding: 45px 20px !important;
+text-align: center;
+ }
+#home div {
+  text-align: center !important;
+            }
+#home h1 {
+  font-size: 38px !important;
+   }
+ #home h2 {
+                font-size: 21px !important;
+            }
+
+            #home p {
+                font-size: 16px !important;
+            }
+
+
+            /* Tables become vertical */
+            table,
+            tbody,
+            tr,
+            td {
+                display: block;
+                width: 100% !important;
+            }
+
+            td {
+                margin-bottom: 15px;
+            }
+
+
+            /* Sections */
+            section {
+                padding-left: 20px !important;
+                padding-right: 20px !important;
+            }
+
+
+            /* Workout Images */
+            #workouts img {
+                width: 100%;
+                height: auto !important;
+            }
+
+
+            /* Testimonial Cards */
+            .girls-cards {
+                display: block !important;
+            }
+
+            .girls-cards > div {
+                width: 100% !important;
+                margin-bottom: 15px;
+            }
+
+
+            /* Journey Section */
+            .journey {
+                width: 90% !important;
+                padding: 20px !important;
+                display: block !important;
+                text-align: center !important;
+            }
+
+            .journey > div {
+                width: 100%;
+                text-align: center !important;
+            }
+
+
+            /* Footer */
+            .footer {
+                display: block !important;
+                text-align: center !important;
+                padding: 20px !important;
+            }
+
+            .footer > div {
+                text-align: center !important;
+                margin-bottom: 15px;
+            }
+
+            .footer-links {
+                display: block !important;
+            }
+
+            .footer-links a {
+                margin: 5px;
+                display: inline-block;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body style="background-color:rgb(255,248,252); color:rgb(75,45,95);">
+
+<nav>
+
+    <section style="background-image:url('navbar.jpg');
+    background-size:cover;
+    background-position:center;
+    padding:30px 50px;">
+
+        <!-- Logo -->
+
+        <div style="text-align:left;
+        font-size:30px;
+        font-weight:bold;
+        font-family:cursive;
+        color:rgb(112,60,139);"> Pretty Gains ♡  </div>
+
+
+
+        <!-- Toggle Checkbox -->
+
+        <input type="checkbox" id="menu-toggle">
+
+
+        <!-- Toggle Button -->
+
+        <label for="menu-toggle" class="toggle-button">
+            ☰
+        </label>
+
+
+        <!-- Navigation Links -->
+
+        <div class="nav-links">
+
+            <a href="#home">
+                Home
+            </a>
+
+            <a href="#workouts">
+                Workouts
+            </a>
+
+            <a href="#nutrition">
+                Nutrition
+            </a>
+
+            <a href="#planner">
+                Planner
+            </a>
+
+            <a href="#tips">
+                Tips
+            </a>
+
+            <a href="#contact">
+                Contact
+            </a>
+
+        </div>
+
+    </section>
+
+</nav>
+<section id="home" style="background-image:url('hero.jpg'); background-size:cover; background-position:center; padding:70px 50px;">
+    <div style="text-align:left;">
+         <h1 style="font-size:52px;font-family:cursive; color:rgb(112,60,139);"> Pretty Gains ♡ </h1> 
+<h2 style="font-size:28px; color:rgb(165,91,157);"> Stronger • Healthier • Happier </h2>
+  <p style="font-size:19px; color:rgb(101,72,108);"> Your fitness journey, our support. Simple workouts,<br> healthy nutrition and personalized plans made for you. </p>
+<button style="background-color:rgb(169,79,192); 
+color:white; border:0; padding:12px 25px;
+ border-radius:20px; font-family:cursive;"> Start Your Journey → 
+ </button>
+ </div> 
+ <br><br>
+</section>
+<section style="padding:50px 30px;font-family:cursive ; background-color:rgb(255, 228, 236); text-align:center;">
+    <h1 style="color:rgb(112,60,139);"> ❤️ Why Choose Pretty Gains? ❤️
+     </h1>
+     <p font-family:cursive ;> Everything you need to make your fitness journey simple and enjoyable. </p> 
+     <br>
+<table width="100%" cellpadding="10">
+     <tr> 
+ <td style="background-color:rgb(255, 240, 245);font-family:cursive ; border-radius:10px; padding:10px; text-align:center;"> 
+    <h2>💪</h2>
+ <h3 font-family:cursive ;>Personalized Workouts</h3>
+ <p font-family:cursive ; > Workout suggestions according to your goals and fitness level. </p> 
+    </td> 
+ <td style="background-color:rgb(255, 240, 245);font-family:cursive ; border-radius:10px; padding:10px; text-align:center;">
+   <h2>🥗</h2> 
+ <h3 font-family:cursive ; >Healthy Nutrition</h3>
+        <p font-family:cursive ;> Simple nutrition guidance and healthy eating habits. </p> 
+   </td>
+  <td style="background-color:rgb(255, 240, 245);font-family:cursive ; border-radius:10px; padding:10px; text-align:center;">
+ <h2>📅</h2>
+  <h3 font-family:cursive ;>Smart Planner</h3> 
+  <p font-family:cursive ;> Plan your workouts according to your available days. </p>
+    </td> 
+    <td style="background-color:rgb(255, 240, 245);font-family:cursive ; border-radius:10px; padding:10px; text-align:center;">
+     <h2>🎯</h2>
+   <h3 font-family:cursive ;>Goal Based Plans</h3>
+     <p font-family:cursive ;> Plans for weight loss, weight gain and fitness. </p> 
+  </td> 
+   <td style="background-color:rgb(255, 240, 245); font-family:cursive ;border-radius:10px; padding:10px; text-align:center;">
+      <h2>🎥</h2>
+       <h3 font-family:cursive ;>Exercise Videos</h3> <p> Easy exercise demonstrations for better understanding. </p> 
+     </td> 
+   </tr> 
+ </table>
+  </section>
+<section id="workouts" style="background-color:rgb(250, 210, 225);font-family:cursive ; padding:50px 30px; text-align:center;"> 
+    <h1 style="color:rgb(112,60,139);font-family:cursive ;">❤️ Explore Our Workouts ❤️ </h1> 
+    <p font-family:cursive ;> Choose the workout category that suits you. </p>
+     <br> 
+     <table width="100%" cellpadding="10"> <tr> 
+ <td style="background-color:rgb(255, 240, 245); padding:15px; border-radius:20px;font-family:cursive ; text-align:center;"> 
+   <img src="upper body.jpg" width="100%" height="180" style="border-radius:20px;"> 
+ <h2 font-family:cursive ;>Upper Body</h2>
+     <p font-family:cursive ;> Arms, shoulders, chest and back exercises. </p>
+     <button style="background-color:rgb(169,79,192);font-family:cursive ; 
+     color:white; border:0; padding:10px 20px; border-radius:15px; font-family:cursive;"> Explore
+         </button>
+     </td> 
+     <td style="background-color:rgb(255, 240, 245); padding:15px; border-radius:20px; text-align:center;">
+         <img src="lower body.jpg" width="100%" height="180" style="border-radius:20px;"> 
+        <h2 font-family:cursive ;>Lower Body</h2> 
+    <p font-family:cursive ;> Legs, glutes and lower body exercises. </p>
+    <button style="background-color:rgb(169,79,192); color:white; border:0; padding:10px 20px; border-radius:15px; font-family:cursive;"> Explore
+         </button>
+ </td>
+  <td style="background-color:rgb(255, 240, 245); padding:15px; border-radius:20px; text-align:center;"> 
+        <img src="core.jpg" width="100%" height="180" style="border-radius:20px;"> 
+    <h2 font-family:cursive ;>Core</h2> 
+    <p font-family:cursive ;> Build a stronger and more stable core. </p>
+     <button style="background-color:rgb(169,79,192);
+      color:white; border:0; padding:10px 20px; border-radius:15px;font-family:cursive ; font-family:cursive;"> Explore
+       </button>
+     </td> 
+     <td style="background-color:rgb(255, 240, 245); padding:15px; border-radius:20px; text-align:center;">
+         <img src="full body.jpg" width="100%" height="180" style="border-radius:20px;"> 
+<h2 font-family:cursive ;>Full Body</h2> 
+<p font-family:cursive ;> Complete workouts for your whole body. </p> 
+<button style="background-color:rgb(169,79,192);
+ color:white; border:0; padding:10px 20px;font-family:cursive ; border-radius:15px; font-family:cursive;"> Explore 
+</button> 
+</td>
+ </tr> 
+</table> 
+</section> 
+<div style=" background:url(https://www.lemon8-app.com/seo/image?item_id=7475503701759836718&index=2&sign=0ce0489f05a168ac51679f05148bdc05);
+    background-size: cover; background-position: center;
+     width: 100%; margin: 0 auto; padding: 16px 20px; display: flex;
+    height: 70px; align-items: center; box-sizing: border-box;
+    justify-content: space-between; box-shadow: 0 4px 10px rgba(0, green0, blue0, alpha1);">
+    <p style="margin: 0; color: #7a3e8a; font-size: 18px;
+     font-style: italic; flex: 1;
+    text-align: center; font-family: cursive;">
+    ❤️ <b><i>"Small steps everyday lead to big changes"</b></i> ❤️
+</p>
+</div>
+<!--what say-->
+<div style="padding: 20px 40px; background: rgb(248,204,227);">
+  <h2 style="color: #5a3d8a; font-size: 18px; font-family: cursive;margin-bottom: 20px;">
+    <b><i>What Our Girls Say</i></b></h2>
+    <!--3 cards-->
+    <div style="display: flex;gap: 20px;">
+      <!--card 1-->
+      <div style="background: #fde6ef; flex: 1; padding: 18px;border-radius: 15px;">
+        <div style="display: flex; align-items: flex-start; gap: 10px;">
+          <img src=" https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZCOSuTW33kC5zUPUUouE3iKibt-mKZJQTL3Pj6c3Gaw&s=10""
+          style="width: 35px; height: 35px; border-radius: 50%;">
+          <p style="margin: 0; font-size: 15px; color: #5a3d8a; line-height: 1.4; font-family: cursive;">
+            <b><i>"This website really help me to build healthy habits.I feel strong and more confident!"</i></b></p>
+            </div>
+            <p style="font-size: 13px; color: #7a5a9a; margin: 0 0 45px; font-family:cursive;"><b>__Ayesha.R__</b></p>
+            </div>
+            <!--card 2-->
+            <div style="background: #fde6ef; flex: 1; padding: 18px; border-radius: 15px;">
+              <div style="display: flex; align-items: flex-start; gap: 10px;">
+                <img src=" https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZCOSuTW33kC5zUPUUouE3iKibt-mKZJQTL3Pj6c3Gaw&s=10"
+                style="width: 35px; height: 35px; border-radius: 50%;">
+                <p style="margin: 0; font-size: 15px; color: #5a3d8a;line-height: 1.4; font-family: cursive;">
+                  <b><i>"The workout videos are super easy to follow.Perfect for beginners!"</i></b></p>
+              </div>
+              <p style="font-size: 13px; color: #7a5a9a; margin: 0 0 45px; font-family: cursive;"><b>__Sana.K__</b></p>
+              </div>
+              <!--card 3-->
+              <div style="background: #fde6ef; flex: 1; padding: 18px; border-radius: 15px;">
+                <div style="display: flex; align-items: flex-start; gap: 10px;">
+                  <img src=" https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZCOSuTW33kC5zUPUUouE3iKibt-mKZJQTL3Pj6c3Gaw&s=10 "
+                  style="width: 35px; height: 35px; border-radius: 50%; ">
+                  <p style="margin: 0; font-size: 15px; color: #5a3d8a; line-height: 1.4; font-family: cursive;">
+                    <b><i>"I love the nutrition tips and meal ideas.My energy is so much better now!"</i></b></p>
+                  </div>
+                  <p style="font-size: 13px; color: #7a5e9a; margin: 0 0 45px; font-family: cursive;"><b>__Zainab.T__</b></p>
+                  </div>
+
+                  </div>
+                  </div>
+                  <!--journey section-->
+                  
+<div style="width: 90%; margin: 30px auto; background: #fde2e8; border-radius: 16px; padding: 25px 35px; display: flex; justify-content: space-between; align-items: center;">
+  <div>
+    <h3 style="margin:0; color: #5a3d8a; font-family: cursive; font-size: 20px;">Ready to Start Your Journey?</h3>
+    <p style="margin:5px 0 12px 0; color: #7a5a9a; font-size: 13px;">Your goals are just a click away!</p>
+    <button style="background: #8a6bc1; color: white; border: none; padding: 8px 18px; border-radius: 8px; font-size: 12px;">Get Started →</button>
+  </div>
+  <div style="text-align: right; line-height: 1.1;">
+    <p style="margin:0; color: #5a3d8a; font-family: cursive; transform: rotate(-5deg);">YOU<br>GOT<br>THIS ♡</p>
+  </div>
+</div>
+
+<!-- 2. FOOTER -->
+<div style="background: rgb(248,204,227); padding: 25px 40px; display: flex; justify-content: space-between; align-items: center; margin-top: 10px;">
+  <div>
+    <h2 style="margin:0; color: #7a4eb3; font-family: cursive; font-size: 20px;">Pretty Gains ♡</h2>
+    <p style="margin:4px 0 0 0; color: #8a6db0; font-size: 12px;">Stronger • Healthier • Happier</p>
+  </div>
+  <div style="display: flex; gap: 12px;">
+    <a href="#" style="text-decoration: none; color: #7a5a9a; font-size: 15px;">Home</a>
+    <a href="#" style="text-decoration: none; color: #7a5a9a; font-size: 15px;">Workouts</a>
+    <a href="#" style="text-decoration: none; color: #7a5a9a; font-size: 15px;">Nutrition</a>
+    <a href="#" style="text-decoration: none; color: #7a5a9a; font-size: 15px;">Contact</a>
+  </div>
+  <div style="text-align: right;">
+    <p style="margin:0; color: #8a6db0; font-size: 15px;">© 2026 Pretty Gains. All rights reserved.</p>
+  </div>
+</div>
+
+</body> 
+  </html>
